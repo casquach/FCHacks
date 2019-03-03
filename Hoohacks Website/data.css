@@ -1,0 +1,26 @@
+html {
+    background: url("bubbles.png");
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+body {
+    margin: 0;
+}
+
+iframe {
+/*
+    display:block;
+    vertical-align:middle;
+    text-align:center;
+    margin:0 auto;
+    width:50%;
+*/
+    position: absolute;
+    top: 15%;
+    transform: translate(-50%);
+}
