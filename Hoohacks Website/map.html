@@ -10,6 +10,7 @@
     <body>
         <div class="wrapper">
             <div class="search">
+<!--                <form onsubmit="enter();"><input id="address" type="text" value="Address..." onClick="Clear();"></form>-->
                 <input id="address" type="text" value="Address..." onClick="Clear();">
             </div>
         </div>
@@ -23,14 +24,21 @@
 -->
                 
 <!--                    <img id="microstrategy" src="images/sampleState.png">-->
+  
                 <div id="wrap">
                     <iframe id="frame" width="400" height="300" src="https://env-132697.customer.cloud.microstrategy.com:443/MicroStrategy/servlet/mstrWeb?evt=3186&src=mstrWeb.3186&subscriptionID=90BF228411E93DC25F120080EFA5E85D&Server=ENV-132697LAIOUSE1&Project=MicroStrategy%20Tutorial&Port=0&share=1&hiddensections=header,path,dockTop,dockLeft,footer"></iframe>
                 </div>
                 
-                    <p>text in between</p>
+                    <p></p>
                 
                 <div id="wrap">
-                    <iframe id="frame" width="400" height="300" src="https://env-132697.customer.cloud.microstrategy.com:443/MicroStrategy/servlet/mstrWeb?evt=3186&src=mstrWeb.3186&subscriptionID=1D09DA4E11E93D6ADEE30080EF1599A2&Server=ENV-132697LAIOUSE1&Project=MicroStrategy%20Tutorial&Port=0&share=1&hiddensections=header,path,dockTop,dockLeft,footer"></iframe>
+                    <iframe id="frame" width="400" height="300"  src="https://env-132697.customer.cloud.microstrategy.com:443/MicroStrategy/servlet/mstrWeb?evt=3186&src=mstrWeb.3186&subscriptionID=441DFCE611E93DCE5F120080EF55485C&Server=ENV-132697LAIOUSE1&Project=MicroStrategy%20Tutorial&Port=0&share=1&hiddensections=path,dockTop,dockLeft,footer"></iframe>
+                </div>
+                
+                <p></p>
+                
+                <div id="wrap">
+                    <iframe id="frame" width="400" height="300"  src="https://env-132697.customer.cloud.microstrategy.com:443/MicroStrategy/servlet/mstrWeb?evt=3186&src=mstrWeb.3186&subscriptionID=5FD658AE11E93DD15F120080EFA5E95F&Server=ENV-132697LAIOUSE1&Project=MicroStrategy%20Tutorial&Port=0&share=1&hiddensections=path,dockTop,dockLeft,footer"></iframe>
                 </div>
                 
             </div>
@@ -105,4 +113,29 @@
     {    
         document.getElementById("address").value= "";
     }
+    
+//    function enter() { // because we are grabbing DOM elements we need to ensure the elements are first loaded.
+//    console.log("hello");
+//    var elm = document.getElementById("address"),
+//    iframe = document.getElementById("frame"); // here we grab the input box and the image
+//    elm.onkeyup = function(event) { // capture the input keyup
+//        console.log(event.keyCode);
+//        switch (event.keyCode) { // here we are running the switch statement against the keyup event keycode value
+//            case (48): 
+//                img.src = "https://env-132697.customer.cloud.microstrategy.com:443/MicroStrategy/servlet/mstrWeb?evt=3186&src=mstrWeb.3186&subscriptionID=1D09DA4E11E93D6ADEE30080EF1599A2&Server=ENV-132697LAIOUSE1&Project=MicroStrategy%20Tutorial&Port=0&share=1&hiddensections=header,path,dockTop,dockLeft,footer";
+//                break;
+//            case (49):
+//                 img.src = "https://env-132697.customer.cloud.microstrategy.com:443/MicroStrategy/servlet/mstrWeb?evt=3186&src=mstrWeb.3186&subscriptionID=90BF228411E93DC25F120080EFA5E85D&Server=ENV-132697LAIOUSE1&Project=MicroStrategy%20Tutorial&Port=0&share=1&hiddensections=header,path,dockTop,dockLeft,footer";
+//                break;
+////            case (50):
+////                 img.src = "http://dummyimage.com/100x100/000/fff&text=2";
+////                break;
+////            case (51):
+////                 img.src = "http://dummyimage.com/100x100/000/fff&text=3";
+////                break;
+////            }
+//        }
+//    }
+
+}
 </script>
