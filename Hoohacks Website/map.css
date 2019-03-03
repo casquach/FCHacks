@@ -16,8 +16,19 @@ body {
     padding: 0;
 }
 
+.areaTitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.neighborhoodInfo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
 #aside {
-    width: 35%;
+    width: 30%;
     height: 90%;
     position: absolute;
     right: 0;
