@@ -27,6 +27,12 @@ body {
     font-size: 18px;
 }
 
+#microstrategy {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+
 #aside {
     width: 30%;
     height: 90%;
