@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <title>Neighborhood Finder</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="map.css">
+        <div id="addressInput"></div>
+        <script>
+            function processUser() {
+                var temp = location.search.substring(1).split("=");
+                temp[1] = temp[1].split("+").join(" ");
+                l = unescape(temp[1]);
+                document.getElementById("addressInput").innerHTML = l; 
+            }
+            if(addressInput != null)
+                processUser();
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="search">
+                <input id="address" type="text" onClick="Clear();">
+                <script>
+                    document.getElementById("address").value = document.getElementById("addressInput").innerHTML;
+                </script>
+            </div>
+        </div>
+        <div id="map"></div>
+        <div id="aside"> 
+            <div id="sidetext">
+                <div class="areaTitle">
+                    Sample Neighborhood
+                </div>
+                <div class="graph">
+                    <img id="microstrategy" src="images/sampleState.png">
+                </div>
+            </div>
+        </div>
+        <script>   
+            function initMap() {
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: {lat: 38.0336, lng: -78.5080},
+                    disableDefaultUI: true,
+                    zoomControl: true,
+                    zoomControlOptions: {
+                        position: google.maps.ControlPosition.TOP_LEFT
+                    },
+                    mapTypeControl: false,
+                    scaleControl: false,
+                    streetViewControl: true,
+                    rotateControl: false,
+                    fullscreenControl: false
+                });
+                var geocoder = new google.maps.Geocoder();
+
+                document.getElementById('address').addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter') {
+                        geocodeAddress(geocoder, map);
+                    }
+                });
+
+                document.getElementById('address').addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter') {
+                        findZip(geocoder);
+                    }
+                });
+
+                geocodeAddress(geocoder, map);
+            }
+
+            function geocodeAddress(geocoder, resultsMap) {
+                var address = document.getElementById('address').value;
+                geocoder.geocode({'address': address}, function(results, status) {
+                    if (status === 'OK') {
+                        resultsMap.setCenter(results[0].geometry.location);
+                        var marker = new google.maps.Marker({
+                            map: resultsMap,
+                            position: results[0].geometry.location
+                        });
+                    } else {
+                        alert('Geocode was not successful for the following reason: ' + status);
+                    }
+                });
+            }
+
+            function findZip(geocoder) {
+                var address = document.getElementById('address').value;
+                geocoder.geocode({'address': address}, function(results, status) {
+                    if (status === 'OK') {
+                        var addresscomps = results[0].address_components;
+                        var zipcodes = addresscomps[addresscomps.length-2];
+                        console.log(addresscomps);
+                        var zip = zipcodes.short_name;
+                        //var state = 
+                    } else {
+                        alert('Geocode was not successful for the following reason: ' + status);
+                    }
+                });
+            }
+
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTZzmcEAuXtgPBDr_D3Hq9saX8QkLgzGk&callback=initMap">
+        </script>
+    </body>
+</html>
+<script>
+    function Clear()
+    {    
+        document.getElementById("address").value= "";
+    }
+</script>
