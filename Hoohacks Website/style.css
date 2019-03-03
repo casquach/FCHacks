@@ -109,6 +109,7 @@ img {
     outline: none;
     font-size: 18pt;
     color: white;
+    vertical-align: middle;
 }
 
 #searchbar {
@@ -120,6 +121,7 @@ img {
     outline: none;
     cursor: text;
     font-size: 12pt;
+    vertical-align: middle;
 }
 #searchbar:focus {
   border: 1.5px solid #3f89ff;
