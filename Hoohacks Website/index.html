@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home - FC Hacks</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="images/logo.png" alt="LOGO">
+            </div>
+            <!--
+            <ul class ="nav-home">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            -->
+        </div>
+        <div class="welcome-text">
+            <h1>Slogan</h1>
+        </div>
+        <form id="form1">
+            <input type="text" name="statename" placeholder="Search...">
+        </form>
+        <button onclick="outputzip()">Hello</button>
+        <script>
+            function outputzip() {
+                var x,y; 
+                x = document.getElementById("form1");
+                y = x.elements["zipcode"].value;
+            }
+        </script>
+    </header>
+    <div class="container">
+        <div class="item">
+            <img src = images/2.png alt ="1">
+        </div>
+        <div class="item">
+            <img src = images/3.png alt ="2">
+        </div>
+
+        <div class="item">
+            <img src = images/4.png alt ="3">
+        </div>
+
+        <div class="item-t">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis justo vitae mauris pulvinar elementum. Vivamus interdum nec nibh non faucibus. Nullam convallis libero sed placerat lobortis.</p>
+        </div>
+
+        <div class="item-t">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis justo vitae mauris pulvinar elementum. Vivamus interdum nec nibh non faucibus. Nullam convallis libero sed placerat lobortis.</p>
+        </div>
+
+        <div class="item-t">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis justo vitae mauris pulvinar elementum. Vivamus interdum nec nibh non faucibus. Nullam convallis libero sed placerat lobortis.</p>
+        </div>
+    </div>
+</body>
+</html>
