@@ -7,11 +7,23 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="map.css">
         <div id="addressInput"></div>
+        <script>
+            function processUser() {
+                var temp = location.search.substring(1).split("=");
+                temp[1] = temp[1].split("+").join(" ");
+                l = unescape(temp[1]);
+                document.getElementById("addressInput").innerHTML = l; 
+            }
+            processUser();
+        </script>
     </head>
     <body>
         <div class="wrapper">
             <div class="search">
                 <input id="address" type="text" onClick="Clear();">
+                <script>
+                    document.getElementById("address").value = document.getElementById("addressInput").innerHTML;
+                </script>
             </div>
         </div>
         <div id="map"></div>
@@ -42,31 +54,16 @@
                     fullscreenControl: false
                 });
                 var geocoder = new google.maps.Geocoder();
-                geocodeAddress2(geocoder, map);
+                //geocodeAddress2(geocoder, map);
 
                 document.getElementById('address').addEventListener('keypress', function (e) {
                     if (e.key === 'Enter') {
                         geocodeAddress(geocoder, map);
                     }
                 });
+                //geocodeAddress2(geocoder, map);
+            }
 
-                document.getElementById('address').addEventListener('keypress', function (e) {
-                    if (e.key === 'Enter') {
-                        findZip(geocoder);
-                    }
-                });
-                
-                processUser();
-                geocodeAddress2(geocoder, map);
-            }
-            
-            function processUser() {
-                var temp = location.search.substring(1).split("=");
-                temp[1] = temp[1].split("+").join(" ");
-                l = unescape(temp[1]);
-                document.getElementById("addressInput").innerHTML = l; 
-            }
-            
             function geocodeAddress(geocoder, resultsMap) {
                 var address = document.getElementById('address').value;
                 geocoder.geocode({'address': address}, function(results, status) {
@@ -81,7 +78,7 @@
                     }
                 });
             }
-            function geocodeAddress(geocoder, resultsMap) {
+            /*function geocodeAddress2(geocoder, resultsMap) {
                 var address = document.getElementById('addressInput').innerHTML;
                 geocoder.geocode({'address': address}, function(results, status) {
                     if (status === 'OK') {
