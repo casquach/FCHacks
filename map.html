@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCuIjuj0MHs94RR6C-TqeT8Hcss_qmOQ8&callback=initMap"
-    async defer></script>
-  </body>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <title>Neighborhood Finder</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="map.css">
+    </head>
+    <body>
+        <div id="map"></div>
+        <div id="aside"> 
+            <div id="sidetext">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et suscipit quam, nec iaculis eros. Vivamus ipsum urna, porttitor eu ultrices vel, posuere egestas lorem. Etiam eu sem quis elit porttitor pharetra. Vivamus scelerisque dui non lectus consectetur molestie. Vestibulum tincidunt nec erat eget sollicitudin. Phasellus elementum vehicula purus sed varius. Morbi rutrum erat at libero malesuada interdum. Nam ligula massa, convallis sed imperdiet eget, malesuada id risus.
+
+Integer nec facilisis lectus. Morbi semper viverra commodo. Nulla congue auctor diam. Donec eu volutpat risus, sed vulputate orci. Suspendisse fermentum arcu non justo posuere finibus ut vel lectus. Suspendisse sit amet aliquam lacus. Aliquam ut quam neque. Ut lobortis dapibus congue. Mauris rhoncus in leo non scelerisque. Sed sed augue molestie, dapibus nunc nec, ornare nunc. Aliquam sed massa ligula. Phasellus nulla arcu, convallis id sagittis eu, scelerisque quis ante.
+
+Donec vel mi mauris. Ut pretium lacinia ullamcorper. Nulla consequat magna ac justo sodales dapibus. In sed nibh urna. Donec eget metus sit amet arcu tincidunt elementum. Aenean sagittis porttitor magna, ut interdum neque molestie sit amet. Vestibulum commodo in nibh a laoreet. Fusce at nunc in justo ultrices interdum eget at nulla. Aenean vitae risus magna. Etiam lacus erat, varius ac lorem a, tristique tempor neque. Nullam maximus, nisl vitae ullamcorper viverra, enim tortor auctor dolor, a dignissim tortor diam at ligula. Nulla porta malesuada justo eget semper. Etiam id dictum quam, eget fermentum tellus. Quisque interdum orci ut volutpat aliquam.
+
+Vivamus sit amet enim magna. Nullam et tortor purus. Pellentesque posuere tempus tellus, in facilisis nulla auctor non. Nulla facilisis erat eget pellentesque tempus. Nam porta, purus sed mollis vulputate, mi nulla interdum felis, ultricies vestibulum risus sapien quis massa. Vivamus fermentum diam rhoncus, convallis quam sit amet, pellentesque nisl. Nullam consequat varius velit vel blandit. Donec ullamcorper ultrices eros, non finibus nibh rutrum non.
+
+Vivamus gravida magna in tellus iaculis, non suscipit nisi viverra. Vivamus id aliquet erat. Morbi dignissim purus diam, non eleifend eros euismod nec. In auctor sit amet turpis sed vestibulum. Duis vitae dictum urna, vitae interdum erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas tristique eleifend commodo. Nunc rutrum dictum erat sit amet elementum. Integer congue, massa quis aliquam tincidunt, ex nisl euismod lacus, ut viverra turpis tortor eget libero. Sed tempor aliquet accumsan.
+
+Nullam lacinia sagittis eleifend. Morbi quis elit felis. Fusce eget elit a erat convallis feugiat. Curabitur non diam vitae ipsum fermentum condimentum nec nec arcu. Cras luctus congue leo semper scelerisque. Nam sapien augue, scelerisque a velit id, vestibulum faucibus dui. Aliquam erat volutpat. Morbi consequat leo rhoncus, consequat odio vitae, elementum justo. Nam venenatis iaculis semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eros justo, facilisis non purus ac, ornare faucibus eros. Aenean eget est lacus. Duis bibendum nulla diam, et ornare nulla elementum vitae. Vivamus malesuada libero eu lacinia commodo. Ut id interdum lacus, at placerat nisl.
+
+Vestibulum pulvinar nulla et posuere scelerisque. Fusce eget pellentesque massa. Praesent ultrices a mi vitae tincidunt. Donec eget enim ac lectus elementum interdum. Nam convallis neque ac nulla tincidunt, id auctor metus euismod. Sed non elementum lorem. Maecenas nec nisi non lorem dapibus blandit. Nulla dictum ipsum vitae ante egestas, ut viverra leo dapibus. Nunc eu interdum nisl. Phasellus vestibulum, odio vitae facilisis rutrum, lectus justo malesuada lectus, at commodo nibh purus ac lorem. Suspendisse potenti. Proin libero orci, tempus in ultrices sed, lobortis quis ante.
+
+Aliquam erat volutpat. In tempor blandit sodales. Etiam dolor diam, feugiat sit amet aliquam id, accumsan sed ligula. Praesent iaculis commodo bibendum. Etiam finibus velit non tincidunt aliquet. Pellentesque non mauris eu dui consequat aliquet ut ut tortor. Vestibulum vel dolor at mauris ornare condimentum. Maecenas pulvinar sem a neque ornare laoreet. Nunc ac quam ac sem laoreet efficitur. Vestibulum id mi leo.
+
+Duis quis mauris mauris. Mauris pellentesque, leo eget viverra bibendum, lectus lectus posuere turpis, porttitor fringilla sem risus a urna. Nam ullamcorper viverra sapien id ornare. Phasellus ornare sem sed tempor commodo. Aliquam auctor ac mauris in efficitur. Phasellus euismod metus et nunc pellentesque mollis. Sed sed euismod leo. Curabitur nec sapien id lectus vehicula varius. Sed sed nisi vulputate, eleifend leo vel, fermentum lorem.
+
+Praesent elementum pellentesque nulla ac accumsan. Ut dictum mollis lorem, quis tristique justo porta et. Donec ac hendrerit leo, sit amet suscipit massa. Aliquam vitae rhoncus dolor. Cras feugiat libero ut accumsan auctor. Quisque at tellus nulla. Cras blandit magna at elit consequat, sit amet fermentum ante sagittis. Cras sagittis, diam et interdum lobortis, magna libero consequat nibh, et facilisis justo orci quis elit. Curabitur at magna arcu.
+
+
+            </div>
+        </div>
+        <script>
+            function initMap() {
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: {lat: 38.0336, lng: -78.5080},
+                    disableDefaultUI: true,
+                    zoomControl: true,
+                    zoomControlOptions: {
+                        position: google.maps.ControlPosition.TOP_LEFT
+                    },
+                    mapTypeControl: false,
+                    scaleControl: false,
+                    streetViewControl: true,
+                    rotateControl: false,
+                    fullscreenControl: false
+                });
+            }
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTZzmcEAuXtgPBDr_D3Hq9saX8QkLgzGk&callback=initMap">
+        </script>
+    </body>
 </html>
