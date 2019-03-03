@@ -6,87 +6,106 @@
         <title>Neighborhood Finder</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="map.css">
-        <div id="addressInput"></div>
-        <script>
-            function processUser() {
-                var temp = location.search.substring(1).split("=");
-                temp[1] = temp[1].split("+").join(" ");
-                l = unescape(temp[1]);
-                document.getElementById("addressInput").innerHTML = l; 
-            }
-            if(addressInput != null)
-                processUser();
-        </script>
+        <<<<<<< HEAD
+                   <div id="addressInput"></div>
+    <script>
+        function processUser() {
+            var temp = location.search.substring(1).split("=");
+            temp[1] = temp[1].split("+").join(" ");
+            l = unescape(temp[1]);
+            document.getElementById("addressInput").innerHTML = l; 
+        }
+        if(addressInput != null)
+            processUser();
+    </script>
+    =======
+    >>>>>>> 517b8b6cda07b88e16edd73a52a8dfa262ab7aa9
     </head>
-    <body>
-        <div class="wrapper">
-            <div class="search">
-                <input id="address" type="text" onClick="Clear();">
-                <script>
-                    document.getElementById("address").value = document.getElementById("addressInput").innerHTML;
-                </script>
-            </div>
+<body>
+    <div class="wrapper">
+        <div class="search">
+            <!--                <form onsubmit="enter();"><input id="address" type="text" value="Address..." onClick="Clear();"></form>-->
+            <input id="address" type="text" value="Address..." onClick="Clear();">
         </div>
-        <div id="map"></div>
-        <div id="aside"> 
-            <div id="sidetext">
-                <div class="areaTitle">
-                    Sample Neighborhood
-                </div>
-                <div class="graph">
-                    <img id="microstrategy" src="images/sampleState.png">
-                </div>
+    </div>
+    <div id="map"></div>
+    <div id="aside"> 
+        <div id="sidetext">
+            <!--
+<div class="areaTitle">
+Sample Neighborhood
+</div>
+-->
+
+            <!--                    <img id="microstrategy" src="images/sampleState.png">-->
+
+            <div id="wrap">
+                <iframe id="frame" width="400" height="300" src="https://env-132697.customer.cloud.microstrategy.com:443/MicroStrategy/servlet/mstrWeb?evt=3186&src=mstrWeb.3186&subscriptionID=90BF228411E93DC25F120080EFA5E85D&Server=ENV-132697LAIOUSE1&Project=MicroStrategy%20Tutorial&Port=0&share=1&hiddensections=header,path,dockTop,dockLeft,footer"></iframe>
             </div>
+
+            <p></p>
+
+            <div id="wrap">
+                <iframe id="frame" width="400" height="300"  src="https://env-132697.customer.cloud.microstrategy.com:443/MicroStrategy/servlet/mstrWeb?evt=3186&src=mstrWeb.3186&subscriptionID=441DFCE611E93DCE5F120080EF55485C&Server=ENV-132697LAIOUSE1&Project=MicroStrategy%20Tutorial&Port=0&share=1&hiddensections=path,dockTop,dockLeft,footer"></iframe>
+            </div>
+
+            <p></p>
+
+            <div id="wrap">
+                <iframe id="frame" width="400" height="300"  src="https://env-132697.customer.cloud.microstrategy.com:443/MicroStrategy/servlet/mstrWeb?evt=3186&src=mstrWeb.3186&subscriptionID=5FD658AE11E93DD15F120080EFA5E95F&Server=ENV-132697LAIOUSE1&Project=MicroStrategy%20Tutorial&Port=0&share=1&hiddensections=path,dockTop,dockLeft,footer"></iframe>
+            </div>
+
         </div>
-        <script>   
-            function initMap() {
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 15,
-                    center: {lat: 38.0336, lng: -78.5080},
-                    disableDefaultUI: true,
-                    zoomControl: true,
-                    zoomControlOptions: {
-                        position: google.maps.ControlPosition.TOP_LEFT
-                    },
-                    mapTypeControl: false,
-                    scaleControl: false,
-                    streetViewControl: true,
-                    rotateControl: false,
-                    fullscreenControl: false
-                });
-                var geocoder = new google.maps.Geocoder();
+    </div>
+    <script>   
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: {lat: 38.0336, lng: -78.5080},
+                disableDefaultUI: true,
+                zoomControl: true,
+                zoomControlOptions: {
+                    position: google.maps.ControlPosition.TOP_LEFT
+                },
+                mapTypeControl: false,
+                scaleControl: false,
+                streetViewControl: true,
+                rotateControl: false,
+                fullscreenControl: false
+            });
+            var geocoder = new google.maps.Geocoder();
 
-                document.getElementById('address').addEventListener('keypress', function (e) {
-                    if (e.key === 'Enter') {
-                        geocodeAddress(geocoder, map);
-                    }
-                });
+            document.getElementById('address').addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') {
+                    geocodeAddress(geocoder, map);
+                }
+            });
+            <<<<<<< HEAD
 
-                document.getElementById('address').addEventListener('keypress', function (e) {
-                    if (e.key === 'Enter') {
-                        findZip(geocoder);
-                    }
-                });
+            document.getElementById('address').addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') {
+                    findZip(geocoder);
+                }
+            });
 
-                geocodeAddress(geocoder, map);
-            }
+            geocodeAddress(geocoder, map);
+        }
+        =======
+            >>>>>>> 517b8b6cda07b88e16edd73a52a8dfa262ab7aa9
 
-            function geocodeAddress(geocoder, resultsMap) {
-                var address = document.getElementById('address').value;
-                geocoder.geocode({'address': address}, function(results, status) {
-                    if (status === 'OK') {
-                        resultsMap.setCenter(results[0].geometry.location);
-                        var marker = new google.maps.Marker({
-                            map: resultsMap,
-                            position: results[0].geometry.location
-                        });
-                    } else {
-                        alert('Geocode was not successful for the following reason: ' + status);
-                    }
-                });
-            }
+            document.getElementById('address').addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') {
+                    findZip(geocoder);
+                }
+            });
 
-            function findZip(geocoder) {
+        }
+            <<<<<<< HEAD
+
+        function findZip(geocoder) {
+            =======
+                function geocodeAddress(geocoder, resultsMap) {
+                >>>>>>> 517b8b6cda07b88e16edd73a52a8dfa262ab7aa9
                 var address = document.getElementById('address').value;
                 geocoder.geocode({'address': address}, function(results, status) {
                     if (status === 'OK') {
@@ -101,15 +120,40 @@
                 });
             }
 
-        </script>
-        <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTZzmcEAuXtgPBDr_D3Hq9saX8QkLgzGk&callback=initMap">
-        </script>
-    </body>
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTZzmcEAuXtgPBDr_D3Hq9saX8QkLgzGk&callback=initMap">
+    </script>
+</body>
 </html>
 <script>
     function Clear()
     {    
         document.getElementById("address").value= "";
+    }
+
+    //    function enter() { // because we are grabbing DOM elements we need to ensure the elements are first loaded.
+    //    console.log("hello");
+    //    var elm = document.getElementById("address"),
+    //    iframe = document.getElementById("frame"); // here we grab the input box and the image
+    //    elm.onkeyup = function(event) { // capture the input keyup
+    //        console.log(event.keyCode);
+    //        switch (event.keyCode) { // here we are running the switch statement against the keyup event keycode value
+    //            case (48): 
+    //                img.src = "https://env-132697.customer.cloud.microstrategy.com:443/MicroStrategy/servlet/mstrWeb?evt=3186&src=mstrWeb.3186&subscriptionID=1D09DA4E11E93D6ADEE30080EF1599A2&Server=ENV-132697LAIOUSE1&Project=MicroStrategy%20Tutorial&Port=0&share=1&hiddensections=header,path,dockTop,dockLeft,footer";
+    //                break;
+    //            case (49):
+    //                 img.src = "https://env-132697.customer.cloud.microstrategy.com:443/MicroStrategy/servlet/mstrWeb?evt=3186&src=mstrWeb.3186&subscriptionID=90BF228411E93DC25F120080EFA5E85D&Server=ENV-132697LAIOUSE1&Project=MicroStrategy%20Tutorial&Port=0&share=1&hiddensections=header,path,dockTop,dockLeft,footer";
+    //                break;
+    ////            case (50):
+    ////                 img.src = "http://dummyimage.com/100x100/000/fff&text=2";
+    ////                break;
+    ////            case (51):
+    ////                 img.src = "http://dummyimage.com/100x100/000/fff&text=3";
+    ////                break;
+    ////            }
+    //        }
+    //    }
+
     }
 </script>

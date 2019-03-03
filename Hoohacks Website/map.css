@@ -28,10 +28,6 @@ body {
     font-size: 18px;
 }
 
-#addressInput {
-    display: none;
-}
-
 #microstrategy {
     margin-top: 10px;
     width: 100%;
@@ -39,7 +35,7 @@ body {
 }
 
 #aside {
-    width: 30%;
+    width: 40%;
     height: 90%;
     position: absolute;
     right: 0;
@@ -150,4 +146,16 @@ input[type="text"]
 }
 #collapse:hover {
     cursor: pointer;
+}
+iframe {display:block;font-size: 0px;vertical-align:bottom; line-height: 0;}
+#wrap { width: 500px; height: 375px; padding: 0; overflow: hidden; }
+#frame { width: 700px; height: 520px; border: 1px solid black;}
+#frame {
+    -ms-zoom: 0.7;
+    -moz-transform: scale(0.7);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.7);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.7);
+    -webkit-transform-origin: 0 0;
 }
