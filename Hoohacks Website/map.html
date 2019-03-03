@@ -11,7 +11,7 @@
         <div class="wrapper">
             <img id ="logo1" src="/assets/fast-banana.png" alt="Logo">
             <div class="search">
-                <input id="address" type="textbox" value="Search...">
+                <input id="address" type="textbox" value="Search..." onClick="Clear();">
                 <input id="submit" type="button" value="&gt">
             </div>
         </div>
@@ -21,15 +21,17 @@
                 <div class="areaTitle">
                     Sample Neighborhood
                 </div>
-                <div class="neighborhoodInfo">
-                    Fairfax County | Virginia | 22310
-                </div>
                 <div class="graph">
                     <img id="microstrategy" src="images/sampleState.png">
                 </div>
             </div>
         </div>
-        <script>            
+        <script>   
+            function Clear()
+            {    
+                document.getElementById("address").value= "";
+            }
+
             function initMap() {
                 var map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 15,
@@ -56,8 +58,18 @@
                         geocodeAddress(geocoder, map);
                     }
                 });
-            }
 
+                document.getElementById('submit').addEventListener('click', function() {
+                    findZip(geocoder);
+                });
+
+                document.getElementById('address').addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter') {
+                        findZip(geocoder);
+                    }
+                });
+
+            }
             function geocodeAddress(geocoder, resultsMap) {
                 var address = document.getElementById('address').value;
                 geocoder.geocode({'address': address}, function(results, status) {
@@ -72,6 +84,13 @@
                     }
                 });
             }
+            function findZip(geocoder) {
+                var address2 = document.getElementById('address').value;
+                geocoder.geocode({'address': address2}, function(results, status) {
+                    
+                }
+            }
+
         </script>
         <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTZzmcEAuXtgPBDr_D3Hq9saX8QkLgzGk&callback=initMap">
