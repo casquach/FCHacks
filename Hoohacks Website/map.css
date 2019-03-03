@@ -57,7 +57,7 @@ body {
     display: inline-block;
 }
 
-#searchbutton {
+#submit {
     margin-left: 5px;
     background-color: #3f89ff;
     height: 35px;
@@ -70,7 +70,7 @@ body {
     color: white;
     vertical-align: middle;
 }
-#searchbar {
+#address {
     width: 650px;
     height: 25px;
     padding: 5px 15px;
@@ -81,9 +81,9 @@ body {
     font-size: 12pt;
     vertical-align: middle;
 }
-#searchbar:focus {
+#address:focus {
   border: 1.5px solid #3f89ff;
 }
-#searchbar:hover {
+#address:hover {
   border: 1.5px solid #3f89ff;
 }

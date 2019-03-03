@@ -9,7 +9,7 @@
 }
 
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/1.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/3.jpg");
     height: 100vh;
     -webkit-background-size: cover;
     background-size: cover;
@@ -53,28 +53,45 @@ div.title-text {
   transform: translate(-50%, -75%);
   font-weight: normal;
   width: 1000px;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   text-align: center;
   color: white;
 }
 
 .container {
-/*
+
+    padding-top: 13%;
+    padding-bottom: 13%;
+    padding-left: 10%;
+    padding-right: 10%;
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1000px;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
     justify-content: space-evenly;
     justify-items: center;
-*/
-    
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/Group%2027.svg");
-    height: 100vh;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
 
+    background-color: #404952;
+}
+input[type="text"]
+{
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    color: gray;
+}
+.text {
+    z-index: 100;
+    position: absolute;
+    color: #404952;
+    font-size: 20px;
+    font-size: 1vw;
+    font-weight: thin;
+    margin-top: -15%;
+    margin-left: 3%;
+    max-width: 300px;
+    font-family: sans-serif;
+    word-wrap:break-word;
 }
 
 .search {
@@ -95,6 +112,7 @@ img {
     object-fit: cover;
 }
 
+/*
 #searchbutton {
     margin-left: 5px;
     background-color: #778899;
@@ -114,17 +132,22 @@ img {
     color: black;
     background-color: white;
 }
+*/
 
+::-webkit-input-placeholder {
+/*   text-align: center;*/
+    padding-left: 5px;
+}
 
 #searchbar {
-    width: 650px;
+    width: 400px;
     height: 25px;
     padding: 5px 15px;
     border: 1.5px solid lightgray;
     border-radius: 100px;
     outline: none;
     cursor: text;
-    font-size: 12pt;
+    font-size: 10pt;
     vertical-align: middle;
 }
 #searchbar:focus {
