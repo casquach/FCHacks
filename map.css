@@ -1,0 +1,33 @@
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+    height: 100%;
+    margin-top: 50px;
+}
+/* Optional: Makes the sample page fill the window. */
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: calc(100% - 50px);
+    margin: 0;
+    padding: 0;
+}
+#aside {
+    width: 25%;
+    height: 90%;
+    position: absolute;
+    right: 0;
+    margin-top: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border-radius: 10px 0px 0px 10px;
+    overflow-y: scroll;   
+}
+#sidetext {
+    padding: 3%;
+    font-family: 'Open Sans', sans-serif;
+}
