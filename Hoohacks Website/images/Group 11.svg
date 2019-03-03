@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1685" height="761" viewBox="0 0 1685 761">
+  <defs>
+    <style>
+      .cls-1, .cls-13 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        opacity: 0.838;
+      }
+
+      .cls-3 {
+        fill: #e6f7ff;
+      }
+
+      .cls-4 {
+        fill: #a4cb90;
+      }
+
+      .cls-5 {
+        fill: #ffcc5a;
+      }
+
+      .cls-6 {
+        fill: #e5a641;
+      }
+
+      .cls-7, .cls-8 {
+        fill: #535353;
+      }
+
+      .cls-7 {
+        font-size: 30px;
+      }
+
+      .cls-13, .cls-7 {
+        font-family: HelveticaNeue-Bold, Helvetica Neue;
+        font-weight: 700;
+      }
+
+      .cls-8 {
+        font-size: 20px;
+        font-family: HelveticaNeue, Helvetica Neue;
+      }
+
+      .cls-9 {
+        fill: #fffdf7;
+      }
+
+      .cls-10 {
+        fill: #91b2ff;
+      }
+
+      .cls-11 {
+        fill: #637cb7;
+      }
+
+      .cls-12 {
+        fill: #aab8ce;
+      }
+
+      .cls-13 {
+        font-size: 150px;
+        letter-spacing: 0.1em;
+      }
+
+      .cls-14 {
+        filter: url(#Rectangle_5-3);
+      }
+
+      .cls-15 {
+        filter: url(#Rectangle_5-2);
+      }
+
+      .cls-16 {
+        filter: url(#Rectangle_5);
+      }
+    </style>
+    <filter id="Rectangle_5" x="0" y="0" width="541" height="761" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_5-2" x="1144" y="0" width="541" height="761" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_5-3" x="572" y="0" width="541" height="761" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_11" data-name="Group 11" transform="translate(-117.5 -1242.5)">
+    <g id="Group_8" data-name="Group 8" transform="translate(0 33)">
+      <g id="Group_5" data-name="Group 5" transform="translate(63 -33)">
+        <g class="cls-16" transform="matrix(1, 0, 0, 1, 54.5, 1242.5)">
+          <rect id="Rectangle_5-4" data-name="Rectangle 5" class="cls-1" width="496" height="716" rx="17" transform="translate(22.5 19.5)"/>
+        </g>
+        <g id="Group_2" data-name="Group 2" class="cls-2" transform="translate(-1052 168)">
+          <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-3" cx="165" cy="165" r="165" transform="translate(1212 1131)"/>
+          <path id="Path_3" data-name="Path 3" class="cls-4" d="M740.843,1381.822c3.551-20.371-46.659-50.856,39.107-70.7s104.842-39.317,164.042,0,107.493,24.5,101.938,63.923,1.788,48.641-56.61,64.222-83.239,49.031-147.771,27.776-71.555-6.494-100.705-32.164S737.291,1402.193,740.843,1381.822Z" transform="translate(489.789 -5.862)"/>
+          <rect id="Rectangle_4" data-name="Rectangle 4" class="cls-5" width="117" height="118" rx="5" transform="translate(1318 1257)"/>
+          <path id="Path_4" data-name="Path 4" class="cls-6" d="M1312,1321.465h150.127l-76.4-72.564Z" transform="translate(-12 -61)"/>
+        </g>
+        <text id="What_our_product_does" data-name="What our product does" class="cls-7" transform="translate(325 1704)"><tspan x="-164.19" y="0">What our product does</tspan></text>
+        <text id="Lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit._Sed_mattis_justo_vitae_mauris_pulvinar_elementum._Vivamus_interdum_nec_nibh_non_faucibus._Nullam_convallis_libero_sed_placerat_lobortis." data-name="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis justo vitae mauris pulvinar elementum. Vivamus interdum nec nibh non faucibus. Nullam convallis libero sed placerat lobortis." class="cls-8" transform="translate(131 1729)"><tspan x="0" y="19">Lorem ipsum dolor sit amet, consectetur </tspan><tspan x="0" y="49">adipiscing elit. Sed mattis justo vitae </tspan><tspan x="0" y="79">mauris pulvinar elementum. Vivamus </tspan><tspan x="0" y="109">interdum nec nibh non faucibus. Nullam </tspan><tspan x="0" y="139">convallis libero sed placerat lobortis.</tspan></text>
+      </g>
+    </g>
+    <g id="Group_9" data-name="Group 9" transform="translate(1144 33)">
+      <g id="Group_5-2" data-name="Group 5" transform="translate(63 -33)">
+        <g class="cls-15" transform="matrix(1, 0, 0, 1, -1089.5, 1242.5)">
+          <rect id="Rectangle_5-5" data-name="Rectangle 5" class="cls-1" width="496" height="716" rx="17" transform="translate(1166.5 19.5)"/>
+        </g>
+        <text id="Why_us" data-name="Why us" class="cls-7" transform="translate(325 1704)"><tspan x="-51.96" y="0">Why us</tspan></text>
+        <text id="Lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit._Sed_mattis_justo_vitae_mauris_pulvinar_elementum._Vivamus_interdum_nec_nibh_non_faucibus._Nullam_convallis_libero_sed_placerat_lobortis.-2" data-name="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis justo vitae mauris pulvinar elementum. Vivamus interdum nec nibh non faucibus. Nullam convallis libero sed placerat lobortis." class="cls-8" transform="translate(131 1729)"><tspan x="0" y="19">Lorem ipsum dolor sit amet, consectetur </tspan><tspan x="0" y="49">adipiscing elit. Sed mattis justo vitae </tspan><tspan x="0" y="79">mauris pulvinar elementum. Vivamus </tspan><tspan x="0" y="109">interdum nec nibh non faucibus. Nullam </tspan><tspan x="0" y="139">convallis libero sed placerat lobortis.</tspan></text>
+      </g>
+      <g id="Group_29" data-name="Group 29">
+        <circle id="Ellipse_3" data-name="Ellipse 3" class="cls-9" cx="167.5" cy="167.5" r="167.5" transform="translate(221 1271)"/>
+        <g id="Group_20" data-name="Group 20" transform="translate(-2003 179)">
+          <g id="Group_19" data-name="Group 19" transform="translate(71 -15)">
+            <g id="Group_12" data-name="Group 12">
+              <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-10" cx="40" cy="40" r="40" transform="translate(2210 1178)"/>
+              <path id="Path_7" data-name="Path 7" class="cls-10" d="M70.109,0c38.72,0,70.109,31.9,70.109,71.243,0,37.93-140.218,39.347-140.218,0S31.389,0,70.109,0Z" transform="translate(2180 1244.079)"/>
+            </g>
+            <g id="Group_17" data-name="Group 17">
+              <circle id="Ellipse_2-2" data-name="Ellipse 2" class="cls-10" cx="40" cy="40" r="40" transform="translate(2210 1178)"/>
+              <path id="Path_7-2" data-name="Path 7" class="cls-10" d="M70.109,0c38.72,0,70.109,31.9,70.109,71.243,0,37.93-140.218,39.347-140.218,0S31.389,0,70.109,0Z" transform="translate(2180 1244.079)"/>
+            </g>
+          </g>
+          <g id="Group_18" data-name="Group 18" transform="translate(211 -15)">
+            <g id="Group_12-2" data-name="Group 12">
+              <circle id="Ellipse_2-3" data-name="Ellipse 2" class="cls-10" cx="40" cy="40" r="40" transform="translate(2210 1178)"/>
+              <path id="Path_7-3" data-name="Path 7" class="cls-10" d="M70.109,0c38.72,0,70.109,31.9,70.109,71.243,0,37.93-140.218,39.347-140.218,0S31.389,0,70.109,0Z" transform="translate(2180 1244.079)"/>
+            </g>
+            <g id="Group_17-2" data-name="Group 17">
+              <circle id="Ellipse_2-4" data-name="Ellipse 2" class="cls-10" cx="40" cy="40" r="40" transform="translate(2210 1178)"/>
+              <path id="Path_7-4" data-name="Path 7" class="cls-10" d="M70.109,0c38.72,0,70.109,31.9,70.109,71.243,0,37.93-140.218,39.347-140.218,0S31.389,0,70.109,0Z" transform="translate(2180 1244.079)"/>
+            </g>
+          </g>
+          <g id="Group_16" data-name="Group 16" transform="translate(141 11)">
+            <g id="Group_12-3" data-name="Group 12">
+              <circle id="Ellipse_2-5" data-name="Ellipse 2" class="cls-11" cx="40" cy="40" r="40" transform="translate(2210 1178)"/>
+              <path id="Path_7-5" data-name="Path 7" class="cls-11" d="M70.109,0c38.72,0,70.109,31.9,70.109,71.243,0,37.93-140.218,39.347-140.218,0S31.389,0,70.109,0Z" transform="translate(2180 1244.079)"/>
+            </g>
+            <g id="Group_17-3" data-name="Group 17">
+              <circle id="Ellipse_2-6" data-name="Ellipse 2" class="cls-11" cx="40" cy="40" r="40" transform="translate(2210 1178)"/>
+              <path id="Path_7-6" data-name="Path 7" class="cls-11" d="M70.109,0c38.72,0,70.109,31.9,70.109,71.243,0,37.93-140.218,39.347-140.218,0S31.389,0,70.109,0Z" transform="translate(2180 1244.079)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Group_10" data-name="Group 10" transform="translate(572 33)">
+      <g id="Group_5-3" data-name="Group 5" transform="translate(63 -33)">
+        <g class="cls-14" transform="matrix(1, 0, 0, 1, -517.5, 1242.5)">
+          <rect id="Rectangle_5-6" data-name="Rectangle 5" class="cls-1" width="496" height="716" rx="17" transform="translate(594.5 19.5)"/>
+        </g>
+        <text id="How_our_project_does_it" data-name="How our project does it" class="cls-7" transform="translate(325 1704)"><tspan x="-167.775" y="0">How our project does it</tspan></text>
+        <text id="Lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit._Sed_mattis_justo_vitae_mauris_pulvinar_elementum._Vivamus_interdum_nec_nibh_non_faucibus._Nullam_convallis_libero_sed_placerat_lobortis.-3" data-name="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis justo vitae mauris pulvinar elementum. Vivamus interdum nec nibh non faucibus. Nullam convallis libero sed placerat lobortis." class="cls-8" transform="translate(131 1729)"><tspan x="0" y="19">Lorem ipsum dolor sit amet, consectetur </tspan><tspan x="0" y="49">adipiscing elit. Sed mattis justo vitae </tspan><tspan x="0" y="79">mauris pulvinar elementum. Vivamus </tspan><tspan x="0" y="109">interdum nec nibh non faucibus. Nullam </tspan><tspan x="0" y="139">convallis libero sed placerat lobortis.</tspan></text>
+        <g id="Group_28" data-name="Group 28">
+          <path id="Path_8" data-name="Path 8" class="cls-12" d="M165,0A165,165,0,1,1,0,165,165,165,0,0,1,165,0Z" transform="translate(160 1316)"/>
+          <g id="Group_22" data-name="Group 22" transform="translate(0 -6)">
+            <text id="_" data-name="/" class="cls-13" transform="translate(325 1538)"><tspan x="-27.825" y="0">/</tspan></text>
+            <g id="Group_21" data-name="Group 21" transform="translate(-140 28)">
+              <text id="_2" data-name="&gt;" class="cls-13" transform="translate(452 1350)"><tspan x="58" y="146">&gt;</tspan></text>
+              <text id="_3" data-name="&lt;" class="cls-13" transform="translate(273 1350)"><tspan x="58" y="146">&lt;</tspan></text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
