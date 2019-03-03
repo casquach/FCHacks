@@ -11,18 +11,9 @@
         <div class="wrapper">
             <img id ="logo1" src="/assets/fast-banana.png" alt="Logo">
             <div class="search">
-                <form id="form1" form target="_blank" action="crimesdata.html">
-                    <input autocomplete="off" id="searchbar" type="text" name="statename" placeholder="Search...">
-                    <button id="searchbutton" type="submit" from="form1">&gt</button>
-                </form>
+                <input id="address" type="textbox" value="Search...">
+                <input id="submit" type="button" value="&gt">
             </div>
-            <script>
-                function outputString(){
-                    var x,y,z;
-                    x = document.getElementById("searchbar");
-
-                }
-            </script>
         </div>
         <div id="map"></div>
         <div id="aside"> 
@@ -46,11 +37,9 @@
                 Duis quis mauris mauris. Mauris pellentesque, leo eget viverra bibendum, lectus lectus posuere turpis, porttitor fringilla sem risus a urna. Nam ullamcorper viverra sapien id ornare. Phasellus ornare sem sed tempor commodo. Aliquam auctor ac mauris in efficitur. Phasellus euismod metus et nunc pellentesque mollis. Sed sed euismod leo. Curabitur nec sapien id lectus vehicula varius. Sed sed nisi vulputate, eleifend leo vel, fermentum lorem.
 
                 Praesent elementum pellentesque nulla ac accumsan. Ut dictum mollis lorem, quis tristique justo porta et. Donec ac hendrerit leo, sit amet suscipit massa. Aliquam vitae rhoncus dolor. Cras feugiat libero ut accumsan auctor. Quisque at tellus nulla. Cras blandit magna at elit consequat, sit amet fermentum ante sagittis. Cras sagittis, diam et interdum lobortis, magna libero consequat nibh, et facilisis justo orci quis elit. Curabitur at magna arcu.
-
-
             </div>
         </div>
-        <script>
+        <script>            
             function initMap() {
                 var map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 15,
@@ -65,6 +54,32 @@
                     streetViewControl: true,
                     rotateControl: false,
                     fullscreenControl: false
+                });
+                var geocoder = new google.maps.Geocoder();
+
+                document.getElementById('submit').addEventListener('click', function() {
+                    geocodeAddress(geocoder, map);
+                });
+
+                document.getElementById('address').addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter') {
+                        geocodeAddress(geocoder, map);
+                    }
+                });
+            }
+
+            function geocodeAddress(geocoder, resultsMap) {
+                var address = document.getElementById('address').value;
+                geocoder.geocode({'address': address}, function(results, status) {
+                    if (status === 'OK') {
+                        resultsMap.setCenter(results[0].geometry.location);
+                        var marker = new google.maps.Marker({
+                            map: resultsMap,
+                            position: results[0].geometry.location
+                        });
+                    } else {
+                        alert('Geocode was not successful for the following reason: ' + status);
+                    }
                 });
             }
         </script>
