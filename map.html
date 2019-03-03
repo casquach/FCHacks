@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
         <meta charset="utf-8">
-        <title>Disabling the Default UI</title>
+        <title>Neighborhood Finder</title>
         <style>
             /* Always set the map height explicitly to define the size of the div
             * element that contains the map. */
@@ -22,10 +22,22 @@
                 margin: 0;
                 padding: 0;
             }
+            #aside {
+                width: 400px;
+                height: 775px;
+                position: absolute;
+                right: 0;
+                margin-top: 25px;
+                top: 50%;
+                transform: translateY(-50%);
+                background: white;
+                border-radius: 15px 0px 0px 15px;
+            }
         </style>
     </head>
     <body>
         <div id="map"></div>
+        <div id="aside"> </div>
         <script>
             function initMap() {
                 var map = new google.maps.Map(document.getElementById('map'), {
@@ -34,7 +46,7 @@
                     disableDefaultUI: true,
                     zoomControl: true,
                     zoomControlOptions: {
-                        position: google.maps.ControlPosition.LEFT_TOP
+                        position: google.maps.ControlPosition.TOP_LEFT
                     },
                     mapTypeControl: false,
                     scaleControl: false,
