@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="646" height="866" viewBox="0 0 646 866">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #fffdf7;
+      }
+
+      .cls-3 {
+        fill: #91b2ff;
+      }
+
+      .cls-4 {
+        fill: #8193be;
+      }
+
+      .cls-5 {
+        fill: #637cb7;
+      }
+
+      .cls-6 {
+        filter: url(#Rectangle_5);
+      }
+    </style>
+    <filter id="Rectangle_5" x="0" y="0" width="646" height="866" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feFlood/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_9" data-name="Group 9" transform="translate(-68 -1157)">
+    <g id="Group_5" data-name="Group 5" transform="translate(63 -33)">
+      <g class="cls-6" transform="matrix(1, 0, 0, 1, 5, 1190)">
+        <rect id="Rectangle_5-2" data-name="Rectangle 5" class="cls-1" width="496" height="716" rx="17" transform="translate(72 72)"/>
+      </g>
+    </g>
+    <g id="Group_29" data-name="Group 29">
+      <circle id="Ellipse_3" data-name="Ellipse 3" class="cls-2" cx="167.5" cy="167.5" r="167.5" transform="translate(221 1271)"/>
+      <g id="Group_20" data-name="Group 20" transform="translate(-2003 179)">
+        <g id="Group_19" data-name="Group 19" transform="translate(71 -15)">
+          <g id="Group_12" data-name="Group 12">
+            <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-3" cx="40" cy="40" r="40" transform="translate(2210 1178)"/>
+            <path id="Path_7" data-name="Path 7" class="cls-3" d="M70.109,0c38.72,0,70.109,31.9,70.109,71.243,0,37.93-140.218,39.347-140.218,0S31.389,0,70.109,0Z" transform="translate(2180 1244.079)"/>
+          </g>
+          <g id="Group_17" data-name="Group 17">
+            <circle id="Ellipse_2-2" data-name="Ellipse 2" class="cls-4" cx="40" cy="40" r="40" transform="translate(2210 1178)"/>
+            <path id="Path_7-2" data-name="Path 7" class="cls-4" d="M70.109,0c38.72,0,70.109,31.9,70.109,71.243,0,37.93-140.218,39.347-140.218,0S31.389,0,70.109,0Z" transform="translate(2180 1244.079)"/>
+          </g>
+        </g>
+        <g id="Group_18" data-name="Group 18" transform="translate(211 -15)">
+          <g id="Group_12-2" data-name="Group 12">
+            <circle id="Ellipse_2-3" data-name="Ellipse 2" class="cls-4" cx="40" cy="40" r="40" transform="translate(2210 1178)"/>
+            <path id="Path_7-3" data-name="Path 7" class="cls-4" d="M70.109,0c38.72,0,70.109,31.9,70.109,71.243,0,37.93-140.218,39.347-140.218,0S31.389,0,70.109,0Z" transform="translate(2180 1244.079)"/>
+          </g>
+          <g id="Group_17-2" data-name="Group 17">
+            <circle id="Ellipse_2-4" data-name="Ellipse 2" class="cls-4" cx="40" cy="40" r="40" transform="translate(2210 1178)"/>
+            <path id="Path_7-4" data-name="Path 7" class="cls-4" d="M70.109,0c38.72,0,70.109,31.9,70.109,71.243,0,37.93-140.218,39.347-140.218,0S31.389,0,70.109,0Z" transform="translate(2180 1244.079)"/>
+          </g>
+        </g>
+        <g id="Group_16" data-name="Group 16" transform="translate(141 11)">
+          <g id="Group_12-3" data-name="Group 12">
+            <circle id="Ellipse_2-5" data-name="Ellipse 2" class="cls-5" cx="40" cy="40" r="40" transform="translate(2210 1178)"/>
+            <path id="Path_7-5" data-name="Path 7" class="cls-5" d="M70.109,0c38.72,0,70.109,31.9,70.109,71.243,0,37.93-140.218,39.347-140.218,0S31.389,0,70.109,0Z" transform="translate(2180 1244.079)"/>
+          </g>
+          <g id="Group_17-3" data-name="Group 17">
+            <circle id="Ellipse_2-6" data-name="Ellipse 2" class="cls-5" cx="40" cy="40" r="40" transform="translate(2210 1178)"/>
+            <path id="Path_7-6" data-name="Path 7" class="cls-5" d="M70.109,0c38.72,0,70.109,31.9,70.109,71.243,0,37.93-140.218,39.347-140.218,0S31.389,0,70.109,0Z" transform="translate(2180 1244.079)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
