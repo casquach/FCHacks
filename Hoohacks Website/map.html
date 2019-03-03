@@ -9,10 +9,15 @@
     </head>
     <body>
         <div class="wrapper">
-            <img id ="logo1" src="/assets/fast-banana.png" alt="Logo">
+<!--            <img id ="logo1" src="/assets/fast-banana.png" alt="Logo">-->
             <div class="search">
-                <input id="address" type="textbox" value="Search...">
-                <input id="submit" type="button" value="&gt">
+                <input autocomplete="off" id="address" type="text" value="Address..." onClick="Clear();">
+<!--                <input id="submit" type="button" value="&gt">-->
+<!--
+            <form id="form1" form target="_blank" action="map.html">
+                    <input autocomplete="off" id="searchbar" type="text" name="statename" value="Address..." onClick="Clear();">
+            </form>
+-->
             </div>
         </div>
         <div id="map"></div>
@@ -78,3 +83,9 @@
         </script>
     </body>
 </html>
+<script>
+        function Clear()
+    {    
+       document.getElementById("address").value= "";
+    }
+</script>

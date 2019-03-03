@@ -14,6 +14,7 @@ body {
     height: calc(100% - 50px);
     margin: 0;
     padding: 0;
+    background-color: #404952;
 }
 
 .areaTitle {
@@ -70,24 +71,29 @@ body {
     height: 50px;
 }
 
+input[type="text"]
+{
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    color: gray;
+}
+.text {
+    z-index: 100;
+    position: absolute;
+    color: #404952;
+    font-size: 20px;
+    font-size: 1vw;
+    font-weight: thin;
+    margin-top: -15%;
+    margin-left: 3%;
+    max-width: 300px;
+    font-family: sans-serif;
+    word-wrap:break-word;
+}
+
 #form1 {
     position: relative;
     left: 0;
     display: inline-block;
-}
-
-#submit {
-    margin-left: 5px;
-    background-color: #3f89ff;
-    height: 35px;
-    width: 35px;
-    border-radius: 100px;
-    text-decoration: none;
-    cursor: pointer;
-    outline: none;
-    font-size: 18pt;
-    color: white;
-    vertical-align: middle;
 }
 #address {
     width: 650px;
@@ -101,12 +107,15 @@ body {
     vertical-align: middle;
 }
 #address:focus {
-    border: 1.5px solid #3f89ff;
+    border: 1.5px solid #778899;
 }
 #address:hover {
-    border: 1.5px solid #3f89ff;
+    border: 1.5px solid #778899;
 }
-
+::-webkit-input-placeholder {
+/*   text-align: center;*/
+    padding-left: 5px;
+}
 #collapse {
     position: absolute;
     left: 0;
