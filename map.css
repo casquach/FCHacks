@@ -60,16 +60,16 @@ body {
 #searchbutton {
     margin-left: 5px;
     background-color: #3f89ff;
-    height: 37px;
-    width: 37px;
+    height: 35px;
+    width: 35px;
     border-radius: 100px;
     text-decoration: none;
     cursor: pointer;
     outline: none;
     font-size: 18pt;
     color: white;
+    vertical-align: middle;
 }
-
 #searchbar {
     width: 650px;
     height: 25px;
@@ -79,6 +79,7 @@ body {
     outline: none;
     cursor: text;
     font-size: 12pt;
+    vertical-align: middle;
 }
 #searchbar:focus {
   border: 1.5px solid #3f89ff;
