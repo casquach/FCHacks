@@ -95,6 +95,21 @@ input[type="text"]
     left: 0;
     display: inline-block;
 }
+
+#submit {
+    margin-left: 5px;
+    background-color: #838B9D;
+    height: 35px;
+    width: 35px;
+    border-radius: 100px;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 18pt;
+    color: white;
+    vertical-align: middle;
+}
+
 #address {
     width: 650px;
     height: 25px;

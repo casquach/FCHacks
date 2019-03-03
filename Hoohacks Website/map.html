@@ -9,15 +9,8 @@
     </head>
     <body>
         <div class="wrapper">
-<!--            <img id ="logo1" src="/assets/fast-banana.png" alt="Logo">-->
             <div class="search">
-                <input autocomplete="off" id="address" type="text" value="Address..." onClick="Clear();">
-<!--                <input id="submit" type="button" value="&gt">-->
-<!--
-            <form id="form1" form target="_blank" action="map.html">
-                    <input autocomplete="off" id="searchbar" type="text" name="statename" value="Address..." onClick="Clear();">
-            </form>
--->
+                <input id="address" type="text" value="Address..." onClick="Clear();">
             </div>
         </div>
         <div id="map"></div>
@@ -26,15 +19,12 @@
                 <div class="areaTitle">
                     Sample Neighborhood
                 </div>
-                <div class="neighborhoodInfo">
-                    Fairfax County | Virginia | 22310
-                </div>
                 <div class="graph">
                     <img id="microstrategy" src="images/sampleState.png">
                 </div>
             </div>
         </div>
-        <script>            
+        <script>   
             function initMap() {
                 var map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 15,
@@ -61,8 +51,18 @@
                         geocodeAddress(geocoder, map);
                     }
                 });
-            }
 
+                document.getElementById('submit').addEventListener('click', function() {
+                    findZip(geocoder);
+                });
+
+                document.getElementById('address').addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter') {
+                        findZip(geocoder);
+                    }
+                });
+
+            }
             function geocodeAddress(geocoder, resultsMap) {
                 var address = document.getElementById('address').value;
                 geocoder.geocode({'address': address}, function(results, status) {
@@ -77,6 +77,19 @@
                     }
                 });
             }
+            function findZip(geocoder) {
+                var address = document.getElementById('address').value;
+                geocoder.geocode({'address': address}, function(results, status) {
+                    if (status === 'OK') {
+                        document.write(results[0].address_components.long_name);
+                        console.log(results[0].address_components.long_name);
+                        console.log("test");
+                    } else {
+                        alert('Geocode was not successful for the following reason: ' + status);
+                    }
+                });
+            }
+
         </script>
         <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTZzmcEAuXtgPBDr_D3Hq9saX8QkLgzGk&callback=initMap">
