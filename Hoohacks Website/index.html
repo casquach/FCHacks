@@ -23,41 +23,26 @@
         <div class="welcome-text">
             <h1>Slogan</h1>
         </div>
-        <form id="form1">
-            <input type="text" name="statename" placeholder="Search...">
-        </form>
-        <button onclick="outputzip()">Hello</button>
-        <script>
-            function outputzip() {
-                var x,y; 
-                x = document.getElementById("form1");
-                y = x.elements["zipcode"].value;
-            }
-        </script>
+        <div class="search">
+            <form id="form1">
+                <input type="text" id="search-bar" name="statename" placeholder="Search...">
+            </form>
+            <div class="icon-container">
+                <button onclick="outputzip()">Search</button>
+            </div>
+            <script>
+                function outputzip() {
+                    var x,y,z; 
+                    x = document.getElementById("form1");
+                    y = x.elements["statename"].value;
+                    z = y + ".html";
+                    return z;
+                }
+            </script>
+        </div>
     </header>
     <div class="container">
-        <div class="item">
-            <img src = images/2.png alt ="1">
-        </div>
-        <div class="item">
-            <img src = images/3.png alt ="2">
-        </div>
-
-        <div class="item">
-            <img src = images/4.png alt ="3">
-        </div>
-
-        <div class="item-t">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis justo vitae mauris pulvinar elementum. Vivamus interdum nec nibh non faucibus. Nullam convallis libero sed placerat lobortis.</p>
-        </div>
-
-        <div class="item-t">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis justo vitae mauris pulvinar elementum. Vivamus interdum nec nibh non faucibus. Nullam convallis libero sed placerat lobortis.</p>
-        </div>
-
-        <div class="item-t">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis justo vitae mauris pulvinar elementum. Vivamus interdum nec nibh non faucibus. Nullam convallis libero sed placerat lobortis.</p>
-        </div>
+        <img id="hello1" src="images/Group%2027.svg">
     </div>
 </body>
 </html>
