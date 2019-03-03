@@ -42,18 +42,10 @@
                 });
                 var geocoder = new google.maps.Geocoder();
 
-                document.getElementById('submit').addEventListener('click', function() {
-                    geocodeAddress(geocoder, map);
-                });
-
                 document.getElementById('address').addEventListener('keypress', function (e) {
                     if (e.key === 'Enter') {
                         geocodeAddress(geocoder, map);
                     }
-                });
-
-                document.getElementById('submit').addEventListener('click', function() {
-                    findZip(geocoder);
                 });
 
                 document.getElementById('address').addEventListener('keypress', function (e) {
@@ -77,6 +69,7 @@
                     }
                 });
             }
+            /*
             function findZip(geocoder) {
                 var address = document.getElementById('address').value;
                 geocoder.geocode({'address': address}, function(results, status) {
@@ -88,7 +81,7 @@
                         alert('Geocode was not successful for the following reason: ' + status);
                     }
                 });
-            }
+            }*/
 
         </script>
         <script async defer
@@ -97,8 +90,8 @@
     </body>
 </html>
 <script>
-        function Clear()
+    function Clear()
     {    
-       document.getElementById("address").value= "";
+        document.getElementById("address").value= "";
     }
 </script>
