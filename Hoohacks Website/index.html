@@ -4,13 +4,19 @@
         <meta charset="UTF-8">
         <title>Home - FC Hacks</title>
         <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="../js/codeAcademy.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
     </head>
 <body>
     <header>
         <div class="wrapper">
+<!--
             <div class="logo">
                 <img src="images/logo.png" alt="LOGO">
             </div>
+-->
             <!--
             <ul class ="nav-home">
                 <li><a href="index.html">Home</a></li>
@@ -20,13 +26,16 @@
             </ul>
             -->
         </div>
-        <div class="welcome-text">
-            <h1>Slogan</h1>
+        <div class="title-text">
+              <h1><span id="typed3"></span></h1>
         </div>
+        
+        
+        
         <div class="search">
-            <form target="_blank" id="form1" action="crimesdata.html">
-                <input autocomplete="off" type="text" id="searchbar" name="statename" placeholder="Search...">
-                <input id="searchbutton" type="submit" value="&gt" />
+            <form id="form1" form target="_blank" action="crimesdata.html">
+                    <input autocomplete="off" id="searchbar" type="text" name="statename" placeholder="Search...">
+                    <button id="searchbutton" type="submit" from="form1">&gt</button>
             </form>
 
 <!--    
@@ -52,3 +61,12 @@
     </div>
 </body>
 </html>
+
+<script>
+      var typed3 = new Typed('#typed3', {
+        strings: ['Find your dream: location', 'Find your dream: state', 'Find your dream: neighborhood', 'Find your dream: home'],
+        typeSpeed: 50,
+        backSpeed: 50,
+        smartBackspace: true, // this is a default
+      });
+</script>

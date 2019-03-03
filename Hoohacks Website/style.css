@@ -45,21 +45,18 @@ header {
     border-radius: 4px;
 }
 
-
-.welcome-text {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -75%);
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; 
-}
-
-.welcome-text h1 {
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    font-size: 100px    
+div.title-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -75%);
+  font-weight: normal;
+  width: 1000px;
+  font-size: 2em;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  text-align: center;
+  color: white;
 }
 
 .container {
@@ -100,7 +97,7 @@ img {
 
 #searchbutton {
     margin-left: 5px;
-    background-color: #3f89ff;
+    background-color: #778899;
     height: 35px;
     width: 35px;
     border-radius: 100px;
@@ -110,7 +107,14 @@ img {
     font-size: 18pt;
     color: white;
     vertical-align: middle;
+    border: none;
 }
+
+#searchbutton:hover {
+    color: black;
+    background-color: white;
+}
+
 
 #searchbar {
     width: 650px;
@@ -124,8 +128,8 @@ img {
     vertical-align: middle;
 }
 #searchbar:focus {
-  border: 1.5px solid #3f89ff;
+  border: 1.5px solid #778899;
 }
 #searchbar:hover {
-  border: 1.5px solid #3f89ff;
+  border: 1.5px solid #778899;
 }
